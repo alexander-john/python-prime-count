@@ -15,7 +15,6 @@ def count_primes_sqrt(n):
             count += 1
     return count
 
-
 if __name__ == "__main__":
     N = 10000
     total_primes = count_primes_sqrt(N)
