@@ -39,3 +39,6 @@ def count_primes(n):
 ```
 
 This is pretty much a brute-force method and is very inefficient.
+
+## Lets optimize!
+### Optimize inner loop
