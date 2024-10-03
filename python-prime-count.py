@@ -1,4 +1,4 @@
-# primes.py
+# python-prime-count.py
 
 def count_primes(n):
     count = 0
