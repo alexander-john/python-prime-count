@@ -42,3 +42,22 @@ This is pretty much a brute-force method and is very inefficient.
 
 ## Lets optimize!
 ### Optimize inner loop
+
+After modifying `count_primes` we end up with the following program. 
+
+```python
+def count_primes_sqrt(n):
+    count = 0
+    for num in range(2, n + 1):
+        is_prime = True
+        sqrt_num = int(math.sqrt(num)) + 1
+        for i in range(2, sqrt_num):
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            count += 1
+    return count
+```
+
+The idea here is that there is no need to check every number less than `num` from `count_primes`. We can check up to the square root, becuase if a number has a factor larger than its square root, it must be paired with a factor smaller than the square root. If no factors are found up to the square root, the number cannot have any other factors, and thus it is prime. Thus, we reduce the number of iterations in the inner loop, leading to an improved execution.
