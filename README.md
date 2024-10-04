@@ -40,6 +40,9 @@ python3 -m cProfile -s cumtime python-prime-count.py
         1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:659(_load_unlocked)
         2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:220(_call_with_frames_removed)
         1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:558(module_from_spec)
+        .
+        .
+        .
 ```
 
 <img width="899" alt="Screen Shot 2024-10-04 at 12 03 29 PM" src="https://github.com/user-attachments/assets/20ba44b7-2fb1-47fc-8416-ab47ade52cb6">
