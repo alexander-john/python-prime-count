@@ -2,20 +2,15 @@
 
 import math
 
-def count_primes_sqrt(n):
-    count = 0
-    for num in range(2, n + 1):
-        is_prime = True
-        sqrt_num = int(math.sqrt(num)) + 1
-        for i in range(2, sqrt_num):
-            if num % i == 0:
-                is_prime = False
-                break
-        if is_prime:
-            count += 1
-    return count
+def count_primes_sieve(n):
+    sieve = [True] * (n + 1)
+    sieve[0:2] = [False, False]
+    for current in range(2, int(n ** 0.5) + 1):
+        if sieve[current]:
+            sieve[current*2:n+1:current] = [False] * len(range(current*2, n+1, current))
+    return sum(sieve)
 
 if __name__ == "__main__":
     N = 10000
-    total_primes = count_primes_sqrt(N)
+    total_primes = count_primes_sieve(N)
     print(f"Number of primes up to {N}: {total_primes}")
