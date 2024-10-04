@@ -1,9 +1,11 @@
 # Prime count analysis!
-## Sieve of Eratosthenes
+### Sieve of Eratosthenes
 
 In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
 
 It does so by iteratively marking as composite (i.e., not prime) the multiples of each prime, starting with the first prime number, 2. The multiples of a given prime are generated as a sequence of numbers starting from that prime, with constant difference between them that is equal to that prime. This is the sieve's key distinction from using trial division to sequentially test each candidate number for divisibility by each prime. Once all the multiples of each discovered prime have been marked as composites, the remaining unmarked numbers are primes.
+
+![XGQR8](https://github.com/user-attachments/assets/c3568212-cab9-4db1-8b21-937f785d39b4)
 
 Here is our Sieve of Eratosthenes algorithm.
 
