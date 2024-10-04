@@ -90,6 +90,6 @@ We reduced execution time by 95.72%. Lets not stop here, I have a better idea!
 
 ## Sieve of Eratosthenes
 
-Switch to the `Sieve of Eratosthenes` branch to see the Sieve of Eratosthenes optimization.
+Switch to the `sieve-of-eratosthenes` branch to see the Sieve of Eratosthenes optimization.
 
 
