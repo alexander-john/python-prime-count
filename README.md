@@ -44,7 +44,7 @@ python3 -m cProfile -s cumtime python-prime-count.py
 ```
 <img width="927" alt="Screen Shot 2024-10-04 at 4 18 11 PM" src="https://github.com/user-attachments/assets/7f092efb-c792-43fe-9ddb-381f80860843">
 
-We reduced execution time by 17x! Lets not stop here, I have a better idea!
+We reduced execution time by 397x! Lets not stop here, I have a better idea!
 
 ## Utilizing NumPy
 
