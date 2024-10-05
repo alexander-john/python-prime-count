@@ -6,6 +6,8 @@ NumPy targets the CPython reference implementation of Python, which is a non-opt
 Here is our NumPy optimization.
 
 ```python
+import numpy as np
+
 def count_primes_numpy(n):
     sieve = np.ones(n + 1, dtype=bool)
     sieve[:2] = False
