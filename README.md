@@ -46,4 +46,4 @@ We got a 3x improvement. Not quite the 397x improvement we got with the Sieve of
 
 ## Parallelization!
 
-Switch to the `Parallelization` branch to see the Parallelization optimization.
+Switch to the `Parallelization` branch to see the parallelization optimization.
