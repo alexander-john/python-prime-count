@@ -4,6 +4,8 @@
 After modifying `count_primes` we end up with the following program. 
 
 ```python
+import math
+
 def count_primes_sqrt(n):
     count = 0
     for num in range(2, n + 1):
