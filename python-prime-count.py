@@ -101,17 +101,19 @@ if __name__ == "__main__":
     result, duration = measure_time(count_primes_parallel, N)
     print(f"Parallelization method took {duration:.5f} seconds.")
     
-    Ns = [10000, 100000, 1000000]
-    times_brute_force = [8, 800, 80000]  # Estimated for illustration
-    times_sqrt = [0.5, 16, 500]
-    times_sieve = [0.002, 0.015, 0.15]
-    times_numpy = [0.001, 0.006, 0.05]
+    Ns = [10000, 100000]
+    times_brute_force = [.4, 32]
+    times_sqrt = [0.01, .18]
+    times_sieve = [0.0004, 0.003]
+    times_numpy = [0.0003, 0.0006]
+    times_parallel = [1.2, 1.3]
 
     plt.figure(figsize=(10, 6))
     plt.loglog(Ns, times_brute_force, label='Brute-Force')
     plt.loglog(Ns, times_sqrt, label='Square Root Optimization')
     plt.loglog(Ns, times_sieve, label='Sieve of Eratosthenes')
     plt.loglog(Ns, times_numpy, label='NumPy Implementation')
+    plt.loglog(Ns, times_parallel, label='Parallelization Implementation')
     plt.xlabel('N')
     plt.ylabel('Time (seconds)')
     plt.title('Execution Time vs N')
